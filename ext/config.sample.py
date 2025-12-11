@@ -19,7 +19,7 @@ max_image_size = 5
 # mysql credentials
 mysql = {
     'db': 'gulag',
-    'host': 'localhost',
+    'host': 'mysql', #Do Not Change THIS (IF USE DOCKER),
     'user': 'cmyui',
     'password': 'changeme',
 }

@@ -1,0 +1,15 @@
+services:
+  guweb:
+    image: guweb:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - banchopy_default
+    tty: true
+    init: true
+    volumes:
+      - .:/srv/root
+
+networks:
+  banchopy_default: #bancho.py's Default Network
+    external: true
